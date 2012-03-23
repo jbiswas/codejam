@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-  int nb_test_cases, C, I, P[1000], nb_elts = 0;
+  int nb_test_cases, C, I, P[2000], nb_elts = 0;
   int test_counter = 1, elt_counter = 0;
 
   int solved = 0;
