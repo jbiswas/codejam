@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdint.h>
 #include <string.h>
 
 int main(void) {
@@ -19,12 +18,10 @@ int main(void) {
     memset(line, '\0', 50000);
     memset(words, '\0', 50000);
     fgets(line, 50000, stdin);
-    //printf("line %d: %s\n", strlen(line), line);
 
     if(strlen(line) > 1) {
       do {
         sscanf(line + word_size, "%s", words[nb_elts]);
-        //printf("%s,%d", words[nb_elts], strlen(words[nb_elts]));
         word_size += strlen(words[nb_elts]) + 1;
         nb_elts++;
       } while (strlen(words[nb_elts-1]) >= 1);
